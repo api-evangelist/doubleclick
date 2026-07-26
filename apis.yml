@@ -1,8 +1,27 @@
 aid: doubleclick
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/doubleclick.png
 name: Doubleclick
-description: Doubleclick is a company surfaced as a portfolio company of canaan-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  DoubleClick was a pioneering digital advertising technology company founded in 1995 and backed by
+  Canaan Partners; it went public in 1998 and was acquired by Google in 2007-2008. Its products were
+  absorbed into what is now the Google Marketing Platform: DoubleClick Campaign Manager became Campaign
+  Manager 360, DoubleClick for Publishers (DFP) became Google Ad Manager, and DoubleClick Bid Manager
+  became Display & Video 360. DoubleClick no longer operates as an independent company and maintains no
+  independent developer portal, website, or API host of its own. The surviving developer/API lineage
+  (dfareporting / doubleclick-advertisers) is served entirely through Google's developer platform. This
+  profile is retained as a historical portfolio-lead record; there is no independent provider surface to
+  enrich.
 url: https://raw.githubusercontent.com/api-evangelist/doubleclick/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +29,42 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: google
+x-acquired-year: 2007
+x-successor-products:
+- Campaign Manager 360 (formerly DoubleClick Campaign Manager / DFA)
+- Google Ad Manager (formerly DoubleClick for Publishers / DFP)
+- Display & Video 360 (formerly DoubleClick Bid Manager)
+x-enrichment-note: >-
+  Defunct/absorbed brand. No independent DoubleClick API, developer portal, baseURL, or DNS/security
+  surface exists to harvest or probe; probing doubleclick.net would attribute Google ad-serving
+  infrastructure to this entity. No artifacts were fabricated. The single surviving developer surface
+  (Google Campaign Manager 360, which retains the doubleclick-advertisers URL lineage) is recorded as a
+  Documentation pointer.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Advertising
+- Ad Tech
+- Marketing
+- Display Advertising
+- Ad Serving
+- Acquired
+common:
+- type: Documentation
+  name: Campaign Manager 360 Developer Documentation (DoubleClick lineage, now Google)
+  url: https://developers.google.com/doubleclick-advertisers
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
