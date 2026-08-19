@@ -42,7 +42,7 @@ x-enrichment-note: >-
   infrastructure to this entity. No artifacts were fabricated. The single surviving developer surface
   (Google Campaign Manager 360, which retains the doubleclick-advertisers URL lineage) is recorded as a
   Documentation pointer.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
