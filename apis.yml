@@ -59,7 +59,7 @@ modified: '2026-07-18'
 tags:
 - Company
 - Advertising
-- AdTech
+- Ad Tech
 - Marketing
 - Display Advertising
 - Ad Serving
@@ -73,6 +73,11 @@ tags_raw:
 - Ad Serving
 - Acquired
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/google/
+  name: Google
+  x-relationship: acquired
+  x-evidence: "DoubleClick was a pioneering digital advertising technology company founded in 1995 and backed by Canaan Partners; it went public in 1998 and was acquired by Google in 2007-2008."
 - type: Documentation
   name: Campaign Manager 360 Developer Documentation (DoubleClick lineage, now Google)
   url: https://developers.google.com/doubleclick-advertisers
